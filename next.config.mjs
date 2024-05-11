@@ -5,6 +5,14 @@ const nextConfig = {
   },
   images: {
     domains: ['m.media-amazon.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'm.media-amazon.com',
+        // Optionally, you can add pathname: '/path/to/images/**',
+      },
+      // You can add more patterns here
+    ],
   },
 };
 
